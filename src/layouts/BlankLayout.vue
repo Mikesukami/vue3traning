@@ -1,13 +1,11 @@
 <template>
-  <v-app>
-    <router-view />
-  </v-app>
+  <p> Blank Layout Page </p>
 </template>
 
 <script setup lang="ts">
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>
