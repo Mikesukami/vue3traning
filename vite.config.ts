@@ -11,9 +11,19 @@ export default defineConfig({
     vue({ 
       template: { transformAssetUrls }
     }),
+    vuetify({
+      styles: {
+      configFile: 'src/styles/base.scss'
+    }}),
     vueDevTools(),
-    vuetify(),
   ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use '@/styles/base' as *;`
+      }
+    }
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
