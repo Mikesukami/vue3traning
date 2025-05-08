@@ -1,0 +1,5 @@
+@mixin gradient($start-color, $end-color, $direction: to right) {
+    background: $start-color;
+    background: -webkit-linear-gradient($direction, $start-color, $end-color);
+    background: linear-gradient($direction, $start-color, $end-color);
+}
