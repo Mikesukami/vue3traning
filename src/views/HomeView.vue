@@ -1,5 +1,5 @@
 <template>
-  <p class="test"> Home Page </p>
+  <p class="test2"> Home Page </p>
 </template>
 
 <script setup lang="ts">
@@ -8,6 +8,6 @@
 
 <style lang="scss" scoped>
 .test {
-  background-color: $primary;
+  @include gradient($primary, $tertiary)
 }
 </style>
